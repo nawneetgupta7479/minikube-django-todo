@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: django-todo-app
+  namespace: django-todo-app   
+spec:
+  containers:
+  - name: django-todo-app
+    image: guptanawneet/react_django:latest
+    ports:
+    - containerPort: 8001
+
